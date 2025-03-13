@@ -39,9 +39,9 @@ This repository contains the code used to conduct the computational experiments 
 In our experiments, we generated random instances of network flow and knapsack problems with piecewise-linear functions (PLFs) in the objective. The code to generate those random instances can be found in *instance_generation.py*. 
 
 We compare the following methods to solve those random instances:
- - our sBB algorithm implemented in *sBB_main.py*, which uses auxiliary functions from *sBB_functions.py*.
- - Gurobi's built-in MINLP and PLF-MILP solver implemented in *gurobi_solver.py*.
- - logarithmic MILP models solved by Gurobi and generated via the toolbox [PiecewiseLinearOpt.jl](https://github.com/jump-dev/PiecewiseLinearOpt.jl) (implemented in *Julia-MIP/MIP_solver.jl*).
+ - our **sBB algorithm** implemented in *sBB_main.py*, which uses auxiliary functions from *sBB_functions.py*.
+ - **Gurobi's built-in MINLP** and **PLF-MILP solver** implemented in *gurobi_solver.py*.
+ - **logarithmic MILP models** solved by Gurobi and generated via the toolbox [PiecewiseLinearOpt.jl](https://github.com/jump-dev/PiecewiseLinearOpt.jl) (implemented in *Julia-MIP/MIP_solver.jl*).
 
 
 ## Replication
@@ -52,7 +52,7 @@ To replicate our experiments, proceed as follows:
 - **Experiment III:** Knapsack problems with continuous concave PLFs (Table 5). Run code in *main.py* and set parameter "problem" to "concave-knapsack".
 - **Experiment IV:** Network flow problems with discontinuous l.s.c. PLFs (Table 7). Run code in *main.py* and set parameter "problem" to "discontinuous network flow".
 - **Experiment V:** Knapsack problems with smooth nonlinear functions approximated by PLFs (Comparison with global solvers, Table 8). Run code in *main.py* and set parameter "problem" to "global-knapsack".
-- **Experiment VI:** Improvement of solution quality by refinement of PLF approximation to smooth nonlinear function (Table 4). Run code in *main_approximation.py*.
+- **Experiment VI:** Improvement of solution quality by refinement of PLF approximation (Table 4). Run code in *main_approximation.py*.
 
 After running the code, the results can be found as CSV files in *Julia-MIP/results*. 
 
