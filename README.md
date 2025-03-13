@@ -43,7 +43,7 @@ We compare the following methods to solve those random instances:
  - **Gurobi's** built-in **MINLP** and **PLF-MILP solver** implemented in *gurobi_solver.py*.
  - **logarithmic MILP models** solved by Gurobi and generated via the toolbox [PiecewiseLinearOpt.jl](https://github.com/jump-dev/PiecewiseLinearOpt.jl) (implemented in *MIP_solver.jl* in *Julia-MIP*).
 
-*Note:* The sBB algorithm is implemented in Python, and the Gurobi built-in solvers are executed via the Gurobi Python API. On the other hand, the logarithmic MILP models are generated in Julia via JuMP and solved by Gurobi. The reason why we split the code is to make use of the above-mentioned toolbox for logarithmic PLF models.
+The sBB algorithm is implemented in Python, and the Gurobi built-in solvers are executed via the Gurobi Python API. On the other hand, the logarithmic MILP models are generated in Julia via JuMP and solved by Gurobi. The reason why we split the code is to make use of the above-mentioned toolbox for logarithmic PLF models.
 
 ## Replication
 
