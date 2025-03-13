@@ -49,12 +49,12 @@ We compare the following methods to solve those random instances:
 
 
 To replicate our experiments, proceed as follows:
-- Experiment I: Network flow problems with continuous concave PLFs (Table 1). Run code in *main.py* and set parameter "problem" to "network flow".
-- Experiment II: Knapsack problems with continuous non-concave PLFs (Table 3).  Run code in *main.py* and set parameter "problem" to "knapsack".
-- Experiment III: Knapsack problems with continuous concave PLFs (Table 5). Run code in *main.py* and set parameter "problem" to "concave-knapsack".
-- Experiment IV: Network flow problems with discontinuous l.s.c. PLFs (Table 7). Run code in *main.py* and set parameter "problem" to "discontinuous network flow".
-- Experiment V: Knapsack problems with smooth nonlinear functions approximated by PLFs (Comparison with global solvers, Table 8). Run code in *main.py* and set parameter "problem" to "global-knapsack".
-- Experiment VI: Improvement of solution quality by refinemnet of PLF approximation to smooth nonlinear function (Table 4). Run code in *main_approximation.py*.
+- **Experiment I:** Network flow problems with continuous concave PLFs (Table 1). Run code in *main.py* and set parameter "problem" to "network flow".
+- **Experiment II:** Knapsack problems with continuous non-concave PLFs (Table 3).  Run code in *main.py* and set parameter "problem" to "knapsack".
+- **Experiment III:** Knapsack problems with continuous concave PLFs (Table 5). Run code in *main.py* and set parameter "problem" to "concave-knapsack".
+- **Experiment IV:** Network flow problems with discontinuous l.s.c. PLFs (Table 7). Run code in *main.py* and set parameter "problem" to "discontinuous network flow".
+- **Experiment V:** Knapsack problems with smooth nonlinear functions approximated by PLFs (Comparison with global solvers, Table 8). Run code in *main.py* and set parameter "problem" to "global-knapsack".
+- **Experiment VI:** Improvement of solution quality by refinemnet of PLF approximation to smooth nonlinear function (Table 4). Run code in *main_approximation.py*.
 
 After running the code, the results can be found as CSV files in *Julia-MIP/results*. 
 
