@@ -36,7 +36,7 @@ Below is the BibTex for citing this snapshot of the repository.
 
 This repository contains the code used to conduct the computational experiments described in the paper *Spatial branch-and-bound for nonconvex separable piecewise-linear optimization*.
 
-In our experiments we generated random instances of (i) network flow and (ii) knapsack problems with piecewise-linear functions (PLFs) in the objective. The code to generate those random instances can be found in *instance_generation.py*. 
+In our experiments we generated random instances of network flow and knapsack problems with piecewise-linear functions (PLFs) in the objective. The code to generate those random instances can be found in *instance_generation.py*. 
 
 We compare the following methods to solve those random instances:
  - our sBB algorithm in *sBB_main.py*, which uses auxiliary functions from *sBB_functions.py*.
