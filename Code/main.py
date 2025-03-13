@@ -24,7 +24,7 @@ import gurobi_solver
 problem = "network flow" #knapsack, concave-knapsack, global-knapsack, network flow, discontinuous network flow 
 
 # Dimension of problems
-n_list =  [100] # [5,10,15,20] for global-knapsack, [100] else 
+n_list =  [100] # [10,11,12,13,14,15,20,30] for global-knapsack, [100] else 
 
 # Number of segments which should be considered
 K_list = [10, 100, 500, 1000, 5000, 10000] # [10000] for global-knapsack, [10, 100, 500, 1000, 5000, 10000] else
