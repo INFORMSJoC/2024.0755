@@ -55,7 +55,9 @@ To replicate our experiments, proceed as follows:
 - **Experiment V:** Knapsack problems with smooth nonlinear functions approximated by PLFs (Comparison with global solvers, Table 8). Run code in *main.py* and set parameter "problem" to "global-knapsack". After running the code, the results can be found as CSV files in *Julia-MIP*. 
 - **Experiment VI:** Improvement of solution quality by refinement of PLF approximation (Table 4). Run code in *main_approximation.py*. After running the code, the results can be found as CSV files in the same directory. 
 
-*Note:* Python, Julia and Gurobi Optimizer are needed to replicate our experiments. After the random instances are generated executing *main.py* using functions *instance_generation.py* those are solved by calling the sBB algorithm in *sBB_main.py* and Gurobi's solvers in *gurobi_solver.py*. The information regarding the random instance (Breakpoints of the piecewise-linear objective function, constraint parameters) are then written to a csv together with the computation time of the sBB and Gurobi's solvers and when executing *main.jl* the prblem information is read from the csv so that the random insatnce can be reconstructed and converted to a logarithmic MILP and solved by Gurobi using functions from *MIP_solver.jl*.
+After generating random instances with *instance_generation.py*, the sBB algorithm (*sBB_main.py*) and Gurobi solvers (*gurobi_solver.py*) solve them. Instance details (breakpoints, constraints) and computation times are saved to a CSV. When running *main.jl*, the problem is reconstructed from the CSV, converted to a logarithmic MILP, and solved with Gurobi (*MIP_solver.jl*).
+
+*Note:* Python, Julia and Gurobi Optimizer are needed to replicate our experiments. 
 
 
 
