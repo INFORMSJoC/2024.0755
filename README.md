@@ -21,7 +21,7 @@ https://doi.org/10.1287/ijoc.2024.0755.cd
 Below is the BibTex for citing this snapshot of the repository.
 
 ```
-@misc{CacheTest,
+@misc{Hubner_Spatial_2025,
   author =        {Thomas H{\"u}bner, Akshay Gupte, Steffen Rebennack},
   publisher =     {INFORMS Journal on Computing},
   title =         {{Spatial branch-and-bound for nonconvex separable piecewise linear optimization}},
