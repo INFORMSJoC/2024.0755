@@ -20,7 +20,7 @@ solver_list = ["sBB", :Logarithmic, :DisaggLogarithmic, :ZigZag, :ZigZagInteger]
 timelimit = 1800
 
 #-----------------
-# "Heat up" solver
+# "Warm up" solver
 #-----------------
 
 model = Model(Gurobi.Optimizer)
