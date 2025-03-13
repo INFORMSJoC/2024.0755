@@ -42,7 +42,7 @@ timelimit = 1800 # 1800
 epsilon = 0.00001 
 
 #-------------------
-# "Heat up" solver
+# "Warm up" solver
 #-------------------
 #Suppressing Gurobi output
 trap = io.StringIO() # set a trap and redirect stdout
