@@ -43,19 +43,19 @@ We compare the following methods to solve those random instances:
  - **Gurobi's** built-in **MINLP** and **PLF-MILP solver** implemented in *gurobi_solver.py*.
  - **logarithmic MILP models** solved by Gurobi and generated via the toolbox [PiecewiseLinearOpt.jl](https://github.com/jump-dev/PiecewiseLinearOpt.jl) (implemented in *Julia-MIP/MIP_solver.jl*).
 
-*Note:* The sBB algorithm is implemented in Python and the Gurobi built-in solvers are executed via the Gurobi Python API. On the other hand, the logarithmic MILP models are generated in Juli via JuMP and solved by Gurobi. The reason why we split the code is to make use of the above-mentioned toolbox for logarithmic PLF models.
+*Note:* The sBB algorithm is implemented in Python, and the Gurobi built-in solvers are executed via the Gurobi Python API. On the other hand, the logarithmic MILP models are generated in Julia via JuMP and solved by Gurobi. The reason why we split the code is to make use of the above-mentioned toolbox for logarithmic PLF models.
 
 ## Replication
 
 To replicate our experiments, proceed as follows:
-- **Experiment I:** Network flow problems with continuous concave PLFs (Table 1). Run code in *main.py* and set parameter "problem" to "network flow". Then run code *main.jl* to solve the same random instances with the logarithmic MILP models in Julia. After running the code, the results can be found as CSV files in *Julia-MIP/results*. 
-- **Experiment II:** Knapsack problems with continuous non-concave PLFs (Table 3).  Run code in *main.py* and set parameter "problem" to "knapsack". Then run code *main.jl*. Then run code *main.jl* to solve the same random instances with the logarithmic MILP models in Julia. After running the code, the results can be found as CSV files in *Julia-MIP/results*. 
-- **Experiment III:** Knapsack problems with continuous concave PLFs (Table 5). Run code in *main.py* and set parameter "problem" to "concave-knapsack". Then run code *main.jl*. Then run code *main.jl* to solve the same random instances with the logarithmic MILP models in Julia. After running the code, the results can be found as CSV files in *Julia-MIP/results*. 
+- **Experiment I:** Network flow problems with continuous concave PLFs (Table 1). Run code in *main.py* and set parameter "problem" to "network flow". Then, run code *main.jl* to solve the same random instances with the logarithmic MILP models in Julia. After running the code, the results can be found as CSV files in *Julia-MIP/results*. 
+- **Experiment II:** Knapsack problems with continuous non-concave PLFs (Table 3).  Run code in *main.py* and set parameter "problem" to "knapsack". Then, run code *main.jl* to solve the same random instances with the logarithmic MILP models in Julia. After running the code, the results can be found as CSV files in *Julia-MIP/results*. 
+- **Experiment III:** Knapsack problems with continuous concave PLFs (Table 5). Run code in *main.py* and set parameter "problem" to "concave-knapsack". Then, run code *main.jl* to solve the same random instances with the logarithmic MILP models in Julia. After running the code, the results can be found as CSV files in *Julia-MIP/results*. 
 - **Experiment IV:** Network flow problems with discontinuous l.s.c. PLFs (Table 7). Run code in *main.py* and set parameter "problem" to "discontinuous network flow". After running the code, the results can be found as CSV files in *Julia-MIP*. 
 - **Experiment V:** Knapsack problems with smooth nonlinear functions approximated by PLFs (Comparison with global solvers, Table 8). Run code in *main.py* and set parameter "problem" to "global-knapsack". After running the code, the results can be found as CSV files in *Julia-MIP*. 
 - **Experiment VI:** Improvement of solution quality by refinement of PLF approximation (Table 4). Run code in *main_approximation.py*. After running the code, the results can be found as CSV files in the same directory. 
 
-*Note:* To replicate our experiments Python, Julia and Gurobi Optimizer are needed.
+*Note:* Python, Julia and Gurobi Optimizer are needed to replicate our experiments.
 
 
 
