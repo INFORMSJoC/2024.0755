@@ -17,7 +17,7 @@ include("MIP_solver.jl")
 # Parameters 
 #------------
 problem = "network flow" #knapsack, concave-knapsack, global-knapsack, network flow, discontinuous network flow 
-solver_list = ["sBB", :Logarithmic, :DisaggLogarithmic, :ZigZag, :ZigZagInteger]
+solver_list = ["sBB", "GRB", :Logarithmic, :DisaggLogarithmic, :ZigZag, :ZigZagInteger]
 timelimit = 1800
 
 #-----------------
