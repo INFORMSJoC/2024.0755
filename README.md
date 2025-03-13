@@ -39,8 +39,8 @@ This repository contains the code used to conduct the computational experiments 
 In our experiments we generated random instances of network flow and knapsack problems with piecewise-linear functions (PLFs) in the objective. The code to generate those random instances can be found in *instance_generation.py*. 
 
 We compare the following methods to solve those random instances:
- - our sBB algorithm in *sBB_main.py*, which uses auxiliary functions from *sBB_functions.py*.
- - Gurobi's built-in MINLP and PLF-MILP solver in *gurobi_solver.py*.
+ - our sBB algorithm implemented in *sBB_main.py*, which uses auxiliary functions from *sBB_functions.py*.
+ - Gurobi's built-in MINLP and PLF-MILP solver implemented in *gurobi_solver.py*.
  - the toolbox [PiecewiseLinearOpt.jl](https://github.com/jump-dev/PiecewiseLinearOpt.jl) which convets a PLF to a logarithmic MILP model which we then solve by Gurobi's MILP solver in *Julia-MIP/MIP_solver.jl*.
 
 
