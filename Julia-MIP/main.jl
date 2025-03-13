@@ -1,7 +1,7 @@
 #Reads the problem from csv file, solves it with MIP solver and writes solve times to csv
 
 #Import
-ENV["GUROBI_HOME"] = "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Gurobi 9.5.0 (win64)"
+ENV["GUROBI_HOME"] = "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Gurobi 11.0.3 (win64)"
 import Pkg
 Pkg.add("Gurobi")
 Pkg.build("Gurobi")
