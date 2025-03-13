@@ -55,7 +55,7 @@ To replicate our experiments, proceed as follows:
 - **Experiment V:** Knapsack problems with smooth nonlinear functions approximated by PLFs (Comparison with global solvers, Table 8). Run code in *main.py* and set parameter "problem" to "global-knapsack". After running the code, the results can be found as CSV files in *Julia-MIP*. 
 - **Experiment VI:** Improvement of solution quality by refinement of PLF approximation (Table 4). Run code in *main_approximation.py*. After running the code, the results can be found as CSV files in the same directory. 
 
-After running the code, the results can be found as CSV files in *Julia-MIP/results*. 
+*Note:* To replicate our experiments Python, Julia and Gurobi Optimizer are needed.
 
 
 
