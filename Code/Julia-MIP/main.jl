@@ -16,6 +16,7 @@ include("MIP_solver.jl")
 #------------
 # Parameters 
 #------------
+problem = "network flow" #knapsack, concave-knapsack, global-knapsack, network flow, discontinuous network flow 
 solver_list = ["sBB", :Logarithmic, :DisaggLogarithmic, :ZigZag, :ZigZagInteger]
 timelimit = 1800
 
@@ -48,7 +49,7 @@ for K in K_list
     plf_time_list = []
 
     #Read problem from csv
-    csv_file = DataFrame(CSV.File("problem_info_K="*string(K)*".csv",header=0))
+    csv_file = DataFrame(CSV.File(problem*"_K="*string(K)*".csv",header=0))
     row = 1
     while row <= nrow(csv_file)
 
