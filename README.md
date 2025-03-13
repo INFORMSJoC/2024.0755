@@ -40,7 +40,7 @@ In our experiments, we generated random instances of network flow and knapsack p
 
 We compare the following methods to solve those random instances:
  - our **sBB algorithm** implemented in *sBB_main.py*, which uses auxiliary functions from *sBB_functions.py*.
- - **Gurobi's built-in MINLP** and **PLF-MILP solver** implemented in *gurobi_solver.py*.
+ - **Gurobi's** built-in **MINLP** and **PLF-MILP solver** implemented in *gurobi_solver.py*.
  - **logarithmic MILP models** solved by Gurobi and generated via the toolbox [PiecewiseLinearOpt.jl](https://github.com/jump-dev/PiecewiseLinearOpt.jl) (implemented in *Julia-MIP/MIP_solver.jl*).
 
 
