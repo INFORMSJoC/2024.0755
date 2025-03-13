@@ -91,7 +91,7 @@ for K in K_list
         #Solve problem
         push!(times_list[1],csv_file[row,4]) #sBB time
         push!(times_list[2],csv_file[row,9]) #GRB time
-        for i in 2:length(solver_list)
+        for i in 3:length(solver_list)
             method = solver_list[i]
             sol_time = @elapsed obj_val, solution = solveMIP(PLFs_breakpoints_x, PLFs_breakpoints_y, rhs, n, problem, method, timelimit)
             push!(times_list[i],sol_time)
